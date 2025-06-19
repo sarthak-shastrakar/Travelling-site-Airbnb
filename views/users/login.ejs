@@ -1,0 +1,59 @@
+<% layout("/layouts/boilerplate") %>
+<link rel="stylesheet" href="/css/Login.css" />
+<div class="row pt-5 Main-Content">
+  <div class="col">
+    <!-- <form action="/login" method="POST" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          class="form-control"
+          id="username"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          class="form-control"
+          id="password"
+          required
+        />
+      </div>
+      <button class="btn btn-dark">Login</button>
+    </form> -->
+
+    <div class="container">
+      <div class="heading">Log In</div>
+      <form
+        action="/login"
+        method="POST"
+        class="needs-validation form"
+        novalidate
+      >
+        <input
+          required=""
+          class="input"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="User-Name"
+          required
+        />
+        <input
+          required=""
+          class="input"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <input class="login-button" type="submit" value="Sign In" />
+      </form>
+    </div>
+  </div>
+</div>

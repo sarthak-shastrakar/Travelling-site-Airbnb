@@ -1,0 +1,150 @@
+
+/* === Global Reset === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* === Filters Section === */
+.filters {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(to right, #fffaf0, #fff0e6);
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  scroll-behavior: smooth;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.08);
+}
+
+.filter:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 10px rgba(250, 181, 112, 0.4);
+}
+
+.filter i {
+  font-size: 1.4rem;
+  color: #f4a261;
+  margin-bottom: 0.3rem;
+}
+
+.filter p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* === Toggle Switch Styling === */
+.tarSwitchtoggle {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  color: #444;
+}
+
+/* === Listing Cards === */
+.listings {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.card-content {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  animation: fadeInUp 0.5s ease;
+}
+
+.card-content:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.card-body {
+  padding: 0.8rem 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.tax-toggle {
+  font-size: 0.85rem;
+  color: #f97316;
+  display: none;
+}
+
+/* === Animations === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .card-content {
+    margin-bottom: 1rem;
+  }
+
+  .tarSwitchtoggle {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+   
+}
+@media screen and (max-width:400px) {
+
+    .listings{
+        width: 75%;
+    }
+    .card{
+        width: 290px;
+    }
+}

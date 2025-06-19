@@ -1,0 +1,92 @@
+.Main-Content{
+  background-color: #2e7b9f;
+  /* background-color: #cff0ff; */
+}
+#title-Heading {
+  color: purple;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: cursive;
+}
+.container {
+  max-width: 700px;
+  background: #f8f9fd;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 0%,
+    rgb(244, 247, 251) 100%
+  );
+  background-image: linear-gradient(135deg, #FFFEFF 10%, #D7FFFE 100%); 
+  border-radius: 5px;
+  padding: 25px 55px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: purple 0px 50px 60px -30px;
+  margin-bottom: 4rem;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: purple;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form .input {
+  width: 100%;
+  background: white;
+  border: none;
+  font-weight: 700
+  ;
+  color: purple;
+  padding: 15px 40px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.form .input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input:focus {
+  outline: none;
+  border-inline: 2px solid purple;
+}
+
+.form .login-button {
+  display: block;
+  width: 50%;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    rgb(16, 137, 211) 0%,
+    rgb(18, 177, 209) 100%
+  );
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form .login-button:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.form .login-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}

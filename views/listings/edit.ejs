@@ -1,0 +1,88 @@
+
+<% layout("/layouts/boilerplate") %>
+<link rel="stylesheet" href="/css/form.css" />
+  <body>
+    <form class="form" action="/listings/<%= listing._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+      <p class="title">Edit Listing</p>
+      <p class="message">Edit your listing details below</p>
+      <label>
+        <input
+        type="text"
+        class="input"
+        required=""
+        name="listing[title]"
+        value="<%= listing.title  %>"
+      />
+        <span> Title</span>
+      </label>
+
+      <label>
+        <textarea
+        type="text"
+        required="Small Description"
+        name="listing[description]"
+        class="input"
+       
+      ><%=listing.description  %></textarea>
+      </label>
+      <label class="input bg-dark text-center text-white py-1">
+        <span>Original listing image</span>
+        <img src="<%= OriginalImageURL %>"  />
+      </label>
+      <label>
+        <input
+        type="file"
+        name="image"
+        class="input"
+      />
+      </label>
+      <div class="flex ">
+        <label>
+          <input
+          type="text"
+          name="listing[location]"
+          required=""
+          class="input"
+          value="<%= listing.location  %>"
+        />
+          <span>Location</span>
+        </label>
+
+        <label>
+          <input
+          type="text"
+          required=""
+          class="input"
+          name="listing[country]"
+          value="<%=listing.country%>"
+        />
+          <span>Country</span>
+        </label>
+      </div>
+      <div class="flex ">
+        <label>
+          <input
+          type="text"
+          name="listing[price]"
+          required=""
+          class="input"
+          value="<%= listing.price  %>"
+        />
+          <span>Price</span>
+        </label>
+
+        <!-- <label>
+          <input
+          type="text"
+          required=""
+          class="input"
+          name="listing[country]"
+          value="<%=    listing.country  %>"
+        />
+          <span>Country</span> -->
+        <!-- </label> -->
+      </div>
+      <button class="btn">Edit</button>
+      
+    </form>
+  </body>

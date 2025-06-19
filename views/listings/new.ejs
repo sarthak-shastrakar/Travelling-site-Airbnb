@@ -1,0 +1,94 @@
+<% layout("/layouts/boilerplate") %>
+<link rel="stylesheet" href="/css/form.css" />
+<body>
+
+    <form class="form  needs-validation" action="/listings" method="POST" novalidate enctype="multipart/form-data">
+      <p class="title">Create New Listing</p>
+      <p class="message"> Please fill out the form below to create a new listing.</p>
+      <label>
+        <input
+        type="text"
+        class="input"
+        name="listing[title]"
+        placeholder=""
+      />
+        <span>Enter a title</span>
+        <div class="invalid-feedback">Enter Title</div>
+      </label>
+
+      <label>
+        <textarea
+        type="text"
+        required="Small Description"
+        name="listing[description]"
+        class="input"
+        placeholder="Enter the Description"
+      ></textarea>
+      <div class="invalid-feedback">Please write short description.</div>
+      </label>
+      <label>
+        <input
+        type="file"
+        name="image"
+        placeholder="upload image"
+        class="input"
+      />
+      <div class="invalid-feedback">Enter Image Link For Looking</div>
+      </label>
+      <div class="flex ">
+        <label>
+          <input
+          type="text"
+          name="listing[location]"
+          required=""
+          class="input"
+        />
+          <span>State/city</span>
+          <div class="invalid-feedback">Location should be valid</div>
+        </label>
+
+        <label>
+          <input
+          type="text"
+          required=""
+          class="input"
+          name="listing[country]"
+        />
+          <span>Country</span>
+          <div class="invalid-feedback">Country name should be entered</div>
+        </label>
+      </div>
+      <div class="flex ">
+        <label>
+          <input
+          type="text"
+          name="listing[price]"
+          required=""
+          class="input"
+        />
+          <span>Price</span>
+           <div class="invalid-feedback">Price should be valid</div>
+
+        </label>
+
+        <!-- <label>
+          <input
+          type="text"
+          required=""
+          class="input"
+          name="listing[country]"
+        />
+          <span>Country</span>
+        </label> -->
+      </div>
+      <!-- From Uiverse.io by TCdesign-dev --> 
+
+<!-- From Uiverse.io by mobinkakei --> 
+<button class="btn">
+    <span class="btn-text-one">CREATE</span>
+    <span class="btn-text-two">create!</span>
+</button>
+      
+    </form>
+  </div>
+</body>

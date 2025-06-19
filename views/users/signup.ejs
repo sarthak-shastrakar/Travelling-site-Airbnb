@@ -1,0 +1,75 @@
+<% layout("/layouts/boilerplate") %>
+<link rel="stylesheet" href="/css/Signup.css" />
+<div class="row pt-3 Main-Content">
+  <span class="text-center mt-2 mb-4" id="title-Heading">Sing-up on Journey</span>
+  <div class="col">
+    <!-- <form action="/signup" method="POST" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          class="form-control"
+          id="username"
+          required
+        />
+        <div class="valid-feedback">Look Good</div>
+      </div>
+      <div class="mb-3">
+        <label for="email">E-Mail</label>
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          id="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          class="form-control"
+          id="password"
+          required
+        />
+      </div>
+      <button class="btn btn-dark">Sing-up</button>
+    </form> -->
+
+
+
+    <div class="container">
+      <div class="heading">Sign In</div>
+      <form action="/signup" method="POST" class="form">
+        <input
+          required=""
+          class="input"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="User-Name"
+        />
+        <input
+          required=""
+          class="input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+        />
+        <input
+          required=""
+          class="input"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <input class="login-button" type="submit" value="Sign In" />
+      </form>
+      
+      </div>
+    </div>
+  </div>

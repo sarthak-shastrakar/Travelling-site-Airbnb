@@ -1,0 +1,178 @@
+/* === DARK CARD STYLING WITH ANIMATION === */
+
+body{
+  background: linear-gradient(to right, #ffffff, #e6e6fa);
+}
+#main-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-main {
+  /* background: linear-gradient(135deg, #1e1e2f, #2c2c3d); */
+  border: none;
+  border-radius: 1rem;
+  color: #f1f1f1;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.card-header {
+  background-color: #2b2b3d;
+  color: #ffb86c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-header .btn-secondary {
+  background-color: #3a3a50;
+  border: none;
+  color: #ffb86c;
+}
+
+.card-header .btn-secondary:hover {
+  background-color: #ffb86c;
+  color: #000;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 250px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #333333; 
+  font-size: 0.95rem;
+}
+
+.list-group-item i {
+  color: #fab570;
+  margin-right: 8px;
+}
+
+.btn-outline-dark {
+  border: 1px solid #ffb86c;
+  color: #ffb86c;
+  background-color: transparent;
+}
+
+.btn-outline-dark:hover {
+  background-color: #ffb86c;
+  color: #111;
+}
+
+.btn-dark {
+  background-color: #111;
+  color: #fff;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #ffb86c;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .card.shadow-lg {
+    margin-bottom: 2rem;
+  }
+
+  .card-header h5 {
+    font-size: 1rem;
+  }
+}
+
+
+  /*  review form*/
+/* Frosted glass UI card from Uiverse.io - customized for Review form */
+/* Frosted Glass Card with Light/Dark Blend */
+.container {
+  position: relative;
+  padding: 2rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container::before {
+  width: 6rem;
+  height: 6rem;
+  top: 30%;
+  right: 7%;
+  border-radius: 50%;
+}
+
+.container::after {
+  width: 4rem;
+  height: 4rem;
+  top: 10%;
+  left: 5%;
+  border-radius: 10px;
+  border: 1px dashed #fab570;
+}
+
+.container .box {
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(240,240,240,0.4));
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  color: #222;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.container .box:hover {
+  border: 1px solid rgba(250, 181, 112, 0.7);
+  box-shadow: 0px 0px 30px 3px rgba(250, 181, 112, 0.2);
+}
+
+.container .box .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  font-weight: 500;
+  color: #444;
+}
+
+textarea,
+input,
+fieldset {
+  background: rgba(255, 255, 255, 0.7) !important;
+  color: #111 !important;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #fab570;
+  box-shadow: 0 0 5px rgba(250, 181, 112, 0.5);
+}
+
+button.btn-dark {
+  background-color: #222;
+  border: none;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+button.btn-dark:hover {
+  background-color: #fab570;
+  color: #111;
+}

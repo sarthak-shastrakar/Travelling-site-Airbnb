@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.Container {
+  flex: 1;
+}
+.navbar {
+  background-color: rgb(255, 254, 254);
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+.card-content {
+  width: 23rem;
+}
+.card-content:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* Footer part */
+footer {
+  border-top: 1px solid #222222;
+}
+.f-info {
+  display: flex;
+  text-align: center;
+  padding-top: 0.6rem;
+  gap: 0.5rem;
+  height: 7rem;
+  background-color: aliceblue;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links {
+  width: 100%;
+}
+.f-info-social {
+  width: 100%;
+  cursor: pointer;
+}
+.f-info-social i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.f-info-links a:hover {
+  color: #fe424d;
+}
+
+/* card css */
+.listing-link {
+  text-decoration: none;
+}
+.card-img-overlay {
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-img-overlay:hover {
+  opacity: 0.4;
+  background-color: #1e1d1d;
+}
