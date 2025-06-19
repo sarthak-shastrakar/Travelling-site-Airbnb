@@ -7,7 +7,6 @@ A full-stack **travel and listing web app** inspired by Airbnb, where users can 
 ### 🚀 Live Demo
 
 🌐 [Visit the Live Site](https://travelling-site-airbnb.onrender.com)  
-*(Replace with your actual Render link after deployment)*
 
 ---
 
